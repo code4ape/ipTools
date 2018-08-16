@@ -54,7 +54,7 @@ public class MailTest {
         message.setFrom(form);
 
         // 设置收件人
-        InternetAddress to = new InternetAddress("wangwen135@qq.com");
+        InternetAddress to = new InternetAddress("1@qq.com");
         message.setRecipient(RecipientType.TO, to);
 
 //        // 设置抄送

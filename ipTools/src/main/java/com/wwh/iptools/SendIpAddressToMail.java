@@ -278,7 +278,7 @@ public class SendIpAddressToMail {
 
         Properties p = new Properties();
         try {
-            p.load(ClassLoader.class.getResourceAsStream("/config.properties"));
+            p.load(ClassLoader.class.getResourceAsStream("/resources/config.properties"));
 
             String _checkInterval = p.getProperty("checkInterval");
             if (_checkInterval != null) {

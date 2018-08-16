@@ -40,7 +40,7 @@ public class MailSender {
     public static void send(IpEntity entity) throws Exception {
         // 配置发送邮件的环境属性
         final Properties props = new Properties();
-        props.load(MailSender.class.getResourceAsStream("/mail.properties"));
+        props.load(ClassLoader.class.getResourceAsStream("/resources/mail.properties"));
 
         // 构建授权信息，用于进行SMTP进行身份验证
         Authenticator authenticator = new Authenticator() {
